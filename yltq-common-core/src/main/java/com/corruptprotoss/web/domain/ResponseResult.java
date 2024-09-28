@@ -118,7 +118,7 @@ public class ResponseResult extends HashMap<String, Object> {
      */
     public static ResponseResult warn(String msg, Object data)
     {
-        return new ResponseResult(HttpStatus.WARN, msg, data);
+        return new ResponseResult(HttpStatus.WARM, msg, data);
     }
 
     /**
@@ -183,7 +183,7 @@ public class ResponseResult extends HashMap<String, Object> {
      */
     public boolean isWarn()
     {
-        return Objects.equals(HttpStatus.WARN, this.get(CODE_TAG));
+        return Objects.equals(HttpStatus.WARM, this.get(CODE_TAG));
     }
 
     /**
