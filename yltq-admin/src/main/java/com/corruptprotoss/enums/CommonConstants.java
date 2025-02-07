@@ -49,12 +49,12 @@ public interface CommonConstants {
 	/**
 	 * 前端工程名
 	 */
-	String FRONT_END_PROJECT = "aldserver-ui";
+	String FRONT_END_PROJECT = "yltqserver-ui";
 
 	/**
 	 * 后端工程名
 	 */
-	String BACK_END_PROJECT = "aldserver";
+	String BACK_END_PROJECT = "yltqserver";
 
 	/**
 	 * 公共参数
@@ -74,7 +74,7 @@ public interface CommonConstants {
 	/**
 	 * 默认存储bucket
 	 */
-	String BUCKET_NAME = "aldserver";
+	String BUCKET_NAME = "yltqserver";
 
 	/**
 	 * 滑块验证码
