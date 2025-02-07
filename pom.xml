@@ -12,6 +12,7 @@
         <module>yltq-common</module>
         <module>yltq-common-core</module>
         <module>yltq-provider-payment</module>
+        <module>yltq-admin</module>
     </modules>
 
 
@@ -39,6 +40,9 @@
         <hutool.core.version>5.8.20</hutool.core.version>
         <hutool.all.version>5.8.20</hutool.all.version>
         <bootstrap.version>3.0.1</bootstrap.version>
+        <swagger.version>1.6.2</swagger.version>
+        <spring-web.version>6.2.1</spring-web.version>
+        <easyexcel.version>2.2.5</easyexcel.version>
     </properties>
 
     <!--  总项目用dependencyManagement来管理，子项目不用管理版本了，可以直接引用 子模块继承之后，提供作用：锁定版本+子module不用写groupId和version -->
@@ -168,6 +172,39 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-bootstrap</artifactId>
                 <version>${bootstrap.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.poi</groupId>
+                        <artifactId>poi-ooxml-schemas</artifactId>
+                    </exclusion>
+
+                    <exclusion>
+                        <artifactId>poi</artifactId>
+                        <groupId>org.apache.poi</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.poi</groupId>
+                        <artifactId>poi-ooxml</artifactId>
+                    </exclusion>
+                </exclusions>
+                <version>${easyexcel.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring-web.version}</version>
             </dependency>
 
         </dependencies>
