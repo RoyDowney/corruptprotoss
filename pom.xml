@@ -43,6 +43,10 @@
         <swagger.version>1.6.2</swagger.version>
         <spring-web.version>6.2.1</spring-web.version>
         <easyexcel.version>2.2.5</easyexcel.version>
+        <poi.version>4.1.2</poi.version>
+        <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
+        <poi-ooxml.version>4.1.2</poi-ooxml.version>
+        <poi-scratchpad.version>4.1.2</poi-scratchpad.version>
     </properties>
 
     <!--  总项目用dependencyManagement来管理，子项目不用管理版本了，可以直接引用 子模块继承之后，提供作用：锁定版本+子module不用写groupId和version -->
@@ -205,6 +209,30 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
                 <version>${spring-web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi-ooxml.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+                <version>${poi-ooxml-schemas.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-scratchpad</artifactId>
+                <version>${poi-scratchpad.version}</version>
             </dependency>
 
         </dependencies>
