@@ -1,10 +1,4 @@
-/**
- * Copyright: 互融云
- *
- * @author: liuchenghui
- * @version: V1.0
- * @Date: 2020-03-31 11:31:20 
- */
+
 package com.corruptprotoss.model;
 
 import io.swagger.annotations.ApiModel;
@@ -15,12 +9,7 @@ import java.beans.Transient;
 import java.util.List;
 
 
-/**
- * <p> NewAppDic </p>
- *
- * @author: liuchenghui
- * @Date: 2020-03-31 11:31:20 
- */
+
 @Data
 @ApiModel(value = "数据字典实体类")
 public class NewAppDic {
