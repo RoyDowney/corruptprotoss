@@ -10,8 +10,8 @@ import com.corruptprotoss.dto.ReportImportExcelAnalysisDto;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author RoyDowney
@@ -126,5 +126,29 @@ public class ReportImportAnalysisListener  extends AnalysisEventListener<ReportI
             }
         }
         return filedValue;
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> integers = Arrays.asList(1, 3, 5);
+        StringJoiner sj = new StringJoiner(",","","");
+
+        for (Integer integer : integers) {
+            sj.add(integer.toString());
+        }
+        System.out.println(sj);
+
+        List<String> words = Arrays.asList("Java", "Python", "Go");
+        String result = words.stream().collect(Collectors.joining());
+        // 输出：JavaPythonGo
+
+        String withDelimiter = words.stream()
+                .collect(Collectors.joining(", "));
+        // 输出：Java, Python, Go
+
+
+
+
+
     }
 }

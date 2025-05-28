@@ -41,7 +41,7 @@
         <hutool.all.version>5.8.20</hutool.all.version>
         <bootstrap.version>3.0.1</bootstrap.version>
         <swagger.version>1.6.2</swagger.version>
-        <spring-web.version>6.2.1</spring-web.version>
+        <spring-web.version>5.3.30</spring-web.version>
         <easyexcel.version>2.2.5</easyexcel.version>
         <poi.version>4.1.2</poi.version>
         <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
